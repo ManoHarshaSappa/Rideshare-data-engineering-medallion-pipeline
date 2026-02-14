@@ -1,0 +1,52 @@
+# ------------------------------------------------------------
+# PROJECT MANIFEST FILE
+# ------------------------------------------------------------
+
+# Project Information
+Project-Name: Rideshare Data Pipeline
+Project-Version: 1.0
+Author: Mano Harsha Sappa
+Description: PySpark + Delta Lake Medallion Architecture Pipeline for Rideshare Analytics
+
+# Environment
+Platform: Databricks
+Language: Python (PySpark)
+Storage: Delta Lake
+Architecture: Medallion (Bronze → Silver → Gold)
+
+# Data Sources
+Source-Type: CSV Files
+Landing-Zone: /Volumes/pysparkdbt/source/source_data/
+
+# Layers
+Bronze-Layer: pysparkdbt.bronze
+Silver-Layer: pysparkdbt.silver
+Gold-Layer: pysparkdbt.gold (future extension)
+
+# Processing Details
+Ingestion-Type: Spark Structured Streaming
+Transformation-Type: PySpark DataFrame API
+Deduplication: CDC based (last_updated_timestamp)
+Upsert-Method: Delta MERGE INTO
+
+# Entities
+Tables: customers, drivers, payments, locations, vehicles, trips
+
+# Dependencies
+Libraries:
+- pyspark
+- delta-spark
+- databricks-runtime
+
+# Last Updated
+Last-Modified-By: Mano Harsha Sappa
+Last-Modified-Date: 2026-02-14
+
+# ------------------------------------------------------------
+
+{
+  "version": "Manifest",
+  "guid": "acedfdee-5280-4c90-b62f-f99af1c0dedc",
+  "origId": -1,
+  "name": "manifest.mf"
+}
