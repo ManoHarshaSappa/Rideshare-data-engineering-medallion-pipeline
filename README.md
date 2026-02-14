@@ -21,9 +21,9 @@ Rideshare platforms generate massive, unstructured datasets that are:
 - Difficult to scale for enterprise BI needs
 
 ---
-### 📸 Architecture Diagram
+### Medallion Architecture Diagram
 
-*Architecture Diagram*
+*PySpark Delta Lake pipeline flowchart*
 ![Pipeline Flow](assets/PySpark%20Delta%20Lake%20pipeline%20flowchart.png)
 
 *dbt Lineage Graph*
