@@ -20,6 +20,16 @@ Rideshare platforms generate massive, unstructured datasets that are:
 - Not optimized for analytics or ML
 - Difficult to scale for enterprise BI needs
 
+---
+### 📸 Architecture Diagram
+
+*Architecture Diagram*
+![Pipeline Flow](assets/PySpark%20Delta%20Lake%20pipeline%20flowchart.png)
+
+*dbt Lineage Graph*
+![dbt DAG](assets/dbt_lineage.png)
+---
+
 ### The Solution
 
 An end-to-end data engineering pipeline leveraging:
@@ -237,16 +247,6 @@ dbt run --models gold.*
 - [ ] CI/CD pipeline with GitHub Actions
 - [ ] Data observability with Monte Carlo / Datafold
 - [ ] SCD Type 2 implementation for historical tracking
-
----
-
-## 📸 Screenshots
-
-*Architecture Diagram*
-![Pipeline Flow](assets/PySpark%20Delta%20Lake%20pipeline%20flowchart.png)
-
-*dbt Lineage Graph*
-![dbt DAG](assets/dbt_lineage.png)
 
 ---
 
