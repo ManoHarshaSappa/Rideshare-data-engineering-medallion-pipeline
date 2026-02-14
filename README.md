@@ -243,7 +243,7 @@ dbt run --models gold.*
 ## 📸 Screenshots
 
 *Architecture Diagram*
-![Pipeline Flow](assets/pipeline_architecture.png)
+![Pipeline Flow](assets/PySpark%20Delta%20Lake%20pipeline%20flowchart.png)
 
 *dbt Lineage Graph*
 ![dbt DAG](assets/dbt_lineage.png)
